@@ -27,7 +27,7 @@ pipeline {
            steps {
               
                 sh 'docker build -t webapp:latest .' 
-                sh 'docker tag devops-learn nidhi1203/webapp:latest'
+                sh 'docker tag devops-learn nidhi1203/apache:latest'
                
           }
         }
@@ -36,7 +36,7 @@ pipeline {
           
             steps {
         withDockerRegistry([ credentialsId: "Docker-hub", url: "" ]) {
-          sh  'docker push nidhi1203/webapp:latest' 
+          sh  'docker push nidhi1203/apache:latest' 
         }
                   
           }

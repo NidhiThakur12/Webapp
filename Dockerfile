@@ -1,6 +1,6 @@
 FROM tomcat:latest
 
-ADD ./target/HelloWorld.war /usr/local/tomcat/Helloworld/
+ADD /var/lib/jenkins/workspace/webapp/target/HelloWorld.war /usr/local/tomcat/MyWebApp/
 
 EXPOSE 8080
 

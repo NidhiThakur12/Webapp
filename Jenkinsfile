@@ -26,7 +26,7 @@ pipeline {
   stage('Docker Build and Tag') {
            steps {
               
-                sh 'docker build -t webapp:latest .' 
+                sh 'docker build -t apache:latest .' 
                 sh 'docker tag devops-learn nidhi1203/apache:latest'
                
           }

@@ -1,6 +1,6 @@
 FROM tomcat:latest
 
-ADD ./target/HelloWorld.war /usr/local/tomcat/webapps
+ADD ./target/HelloWorld.war /usr/local/tomcat/webapps/
 
 EXPOSE 8080
 

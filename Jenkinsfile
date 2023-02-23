@@ -34,7 +34,7 @@ pipeline {
            steps {
               
                 sh 'docker build -t apache:latest .' 
-                sh 'docker tag devops-learn nidhi1203/apache:latest'
+                sh 'docker tag apache nidhi1203/apache:latest'
                
           }
         }

@@ -9,12 +9,19 @@ pipeline {
     
   
     stages {
+        
+        stage('CleanWorkspace') {
+            steps {
+              cleanWs()
+             }
+        }
+        
         stage('source') {
             steps {
                git 'https://github.com/NidhiThakur12/Webapp.git'
 
-            }
-            }            
+             }
+        }            
         
          stage('build') {
             steps {
